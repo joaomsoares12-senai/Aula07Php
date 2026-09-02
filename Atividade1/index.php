@@ -6,7 +6,60 @@
     <title>Análise de Saúde Financeira</title>
 
     <style>
+        body {
+            display: inline;
+            justify-content: center;
+            background-color: #dfecff;
+        }
 
+        header {
+            display: grid;
+            justify-content: center;
+            place-items: center;
+            background-color: #193b64;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            gap: 10px;
+            background-color: #062954;
+        }
+        nav div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 60px;
+            border-radius: 25px;
+        }
+        nav div:hover {
+            transition: background 0.3s ease;
+            background-color: #92c3ff;
+        }
+        nav div a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            display: grid;
+            width: 90%;
+            height: 500px;
+            margin: 2.5% auto;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #fff;
+        }
+        main img {
+            width: 98%;
+            height: 350px;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
     </style>
 </head>
 <body>
@@ -16,17 +69,16 @@
     </header>
 
     <nav>
-        <div class="Menu">
-            <div><a href="index.php">Início<a></div>
-            <div><a href="index.php">Cadastro<a></div>
-            <div><a href="index.php">Lista de Cadastro<a></div>
-            <div><a href="index.php">Minha Análise<a></div>
-        </div>
+        <div class="selecionado"><a href="index.php"><h3>Início</h3><a></div>
+        <div class="opcao"><a href="index.php"><h3>Cadastro</h3><a></div>
+        <div class="opcao"><a href="index.php"><h3>Lista de Cadastro</h3><a></div>
+        <div class="opcao"><a href="index.php"><h3>Minha Análise</h3><a></div>
     </nav>
 
     <main>
         <img src="./img/Happy.webp">
-        <h1><strong>Bem-vindo ao Analisador de Saúde Financeira</strong></h1>
+
+        <h1>Bem-vindo ao Analisador de Saúde Financeira</strong></h1>
         <h3>Este sistema foi desenvolvido para ajudar você, estudante a entender melhor seus hábitos de consumo e avaliar sua saúde financeira de forma simples e objetiva.</h3>
     </main>
 </body>
