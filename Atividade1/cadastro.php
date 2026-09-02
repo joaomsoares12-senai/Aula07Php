@@ -54,11 +54,8 @@
             border-radius: 15px;
             background-color: #fff;
         }
-        main img {
-            width: 98%;
-            height: 350px;
-            margin: 0 auto;
-            border-radius: 15px;
+        main form {
+            display: inline;
         }
     </style>
 </head>
@@ -76,10 +73,27 @@
     </nav>
 
     <main>
-        <img src="./img/Happy.webp">
-
-        <h1>Bem-vindo ao Analisador de Saúde Financeira</strong></h1>
-        <h3>Este sistema foi desenvolvido para ajudar você, estudante a entender melhor seus hábitos de consumo e avaliar sua saúde financeira de forma simples e objetiva.</h3>
+        <form>
+            <h1>🧾 Cadastro do Estudante</h1>
+            <h3>Preencha seus dados para começar</h3>
+            <br>
+            <label>Nome completo:</label>
+            <input type="text" name="nome">
+            <br>
+            <label>E-mail:</label>
+            <input type="text" name="email">
+            <br>
+            <label>Cidade:</label>
+            <select name="sexo"> 
+            <option value="Bayeux">Bayeux</option>
+            <option value="João Pessoa">João Pessoa</option>
+            <option value="Campina Grande">Campina Grande</option>
+            <option value="Santa Rita">Santa Rita</option>
+            <option value="Cabedelo">Cabedelo</option>
+            </select>
+            <br>
+            <button type="submit">📩 Cadastrar</button>
+        </form>
     </main>
 </body>
 </html>
