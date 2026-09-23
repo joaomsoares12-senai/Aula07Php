@@ -5,10 +5,17 @@
         $nome = $_POST['nome'] ?? "";
         $email = $_POST['email'] ?? "";
 
-        $sql = "INSERT INTO aluno (nome, email) VALUE (:nome, :email)";
+        $sql = "INSERT INTO Aluno (nome, email) VALUE (:nome, :email)";
         $stmt = $db->prepare($sql);
         $stmt->bindParam(':nome', $nome);
         $stmt->bindParam(':email', $email);
-        $stmt->execute();
+        if($stmt->execute()) {
+            echo "
+            <script>
+                alert('Cadastro Realizado!');
+                window.location.href='../index.php';
+            </script>
+            ";
+        }
     }   
 ?>
