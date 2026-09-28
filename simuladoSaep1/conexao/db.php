@@ -1,6 +1,6 @@
 <?php 
     $host = "localhost";
-    $dbname = "escolat";
+    $dbname = "dbAtacadao";
     $usuario = "root";
     $senha = "";
 

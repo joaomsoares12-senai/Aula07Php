@@ -7,29 +7,23 @@
         $categoria = $_POST["categoria"] ?? "";
         $quantidade = $_POST["quantidade"] ?? "";
 
-        $sql = "INSERT INTO Produto (id, nome, categoria, quatidade) VALUE(:id, :nome, :categoria, :quantidade);";
+        $sql = "INSERT INTO Produto (id, nome, categoria, quantidade) VALUE(:id, :nome, :categoria, :quantidade);";
         $stmt = $db->prepare($sql);
         $stmt->bindParam(":id", $id);
         $stmt->bindParam(":nome", $nome);
         $stmt->bindParam(":categoria", $categoria);
         $stmt->bindParam(":quantidade", $quantidade);
         
-        if!($stmt->execute()) {
+        if(!$stmt->execute()) {
             print_r($stmt->errorInfo());
         } else {
             echo
                 "
                     <script>
                         alert('Cadastro realizado com sucesso!');
+                        window.location.href='../index.php';
                     </script>
-                "
-        };
-    }
-
-    echo 
-        "
-            <script>
-                window.location.href='../index.php';
-            </script>
-        ";
+                ";
+        }
+    }     
 ?>

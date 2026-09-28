@@ -13,7 +13,7 @@
 
         <nav>
             <div class="BotaoInicio">
-                <a href="index.php">Início</a>
+                <a href="index.php">Início </a>
             </div>
             <div class="BotaoCadastrar">
                 <a href="cadastro.php">Cadastrar </a>
@@ -25,7 +25,7 @@
 
         <!--Especifíco para a página -->
         <main>
-            <h1> <strong> Seja bem-vindo ao sistema Atacadão! </strong></h1>
+                
         </main>
 </body>
 </html>
