@@ -1,0 +1,195 @@
+nav {
+    background-image: linear-gradient(aquamarine, whitesmoke);
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 36px;
+
+    width: 100%;
+    height: 80px;
+} 
+
+nav ul {
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease;
+}
+
+nav ul li a{
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    text-decoration: none;
+}
+
+nav ul hr {
+    background-color: black;
+    border-color: black;
+
+    width: 2px;
+    height: 24px;
+
+    margin-right: 24px;
+}
+
+#logo {
+    font-size: 32px;
+    font-weight: bolder;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: whitesmoke;
+
+    border-radius: 8px;
+
+    margin-left: 12px;
+
+    width: 54px;
+    height: 54px;
+}
+
+#titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    margin-left: 12px;
+    margin-right: 24px;
+
+    color: black;
+}
+
+#bt-votar {
+    background-color: white;
+    list-style-type: none;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    font-weight: bold;
+
+    border-radius: 16px;
+
+    margin-right: 16px;
+
+    width: 80px;
+    height: 30px;
+}
+
+#tx-emoji-candidato {
+    font-size: 20px;
+
+    background-color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+
+    margin-left: 12px;
+
+    width: 40px;
+    height: 40px;
+}
+
+#bt-visualizar-ganhador, #bt-cadastrar-candidato, #bt-gerenciar-candidato{
+    background-color: whitesmoke;
+    list-style-type: none;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    width: 200px;
+    height: 45px;
+}
+
+main {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 24px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    color: #000000;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boxCandidato {
+    width: 350px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 15px;
+    padding-left: 12px;
+
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bVotar {
+    width: 100px;
+    height: 45px;
+    padding: 12px;
+    margin-bottom: 12px;
+    color: #000000;
+    background-color: aquamarine;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
