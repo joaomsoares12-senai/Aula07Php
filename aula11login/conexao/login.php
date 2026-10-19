@@ -18,13 +18,14 @@
                 echo "
                     <script>
                         alert('Seja bem vindo! 😃');
+                        window.location.href = '../index.php';
                     </script>
                 ";    
             } else {
                 echo "
                     <script>
                         alert('😏 Senha incorreta!');
-                        window.location.href = '../index.php';
+                        window.location.href = '../login.php';
                     </script>
                 ";
             }
@@ -32,7 +33,7 @@
             echo "
                 <script>
                     alert('😣 Usuário não encontrado!');
-                    window.location.href = '../index.php';
+                    window.location.href = '../login.php';
                 </script>
             ";
         }
